@@ -1,0 +1,22 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'images/restaurant-logo.jpg' %}" style="width:100px;"> 
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'collections' %}">Menus</a>
+        </li>
+        
+        <!--li class="nav-item">
+          <a class="nav-link disabled" href="#">Contact Us</a>
+        </li-->
+      </ul>
+    </div>
+  </nav>
